@@ -13,6 +13,7 @@
 		6A9C81D01FF475FB006997ED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A9C81CE1FF475FB006997ED /* Main.storyboard */; };
 		6A9C81DC1FF475FB006997ED /* mac_ble_swiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A9C81DB1FF475FB006997ED /* mac_ble_swiftTests.swift */; };
 		6A9C81E71FF475FB006997ED /* mac_ble_swiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A9C81E61FF475FB006997ED /* mac_ble_swiftUITests.swift */; };
+		6A9C81F61FF47637006997ED /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A9C81F51FF47637006997ED /* CoreBluetooth.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +47,7 @@
 		6A9C81E21FF475FB006997ED /* mac-ble-swiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "mac-ble-swiftUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A9C81E61FF475FB006997ED /* mac_ble_swiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mac_ble_swiftUITests.swift; sourceTree = "<group>"; };
 		6A9C81E81FF475FB006997ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6A9C81F51FF47637006997ED /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +55,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6A9C81F61FF47637006997ED /* CoreBluetooth.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,6 +83,7 @@
 				6A9C81DA1FF475FB006997ED /* mac-ble-swiftTests */,
 				6A9C81E51FF475FB006997ED /* mac-ble-swiftUITests */,
 				6A9C81C61FF475FB006997ED /* Products */,
+				6A9C81F41FF47637006997ED /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -122,6 +126,14 @@
 				6A9C81E81FF475FB006997ED /* Info.plist */,
 			);
 			path = "mac-ble-swiftUITests";
+			sourceTree = "<group>";
+		};
+		6A9C81F41FF47637006997ED /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6A9C81F51FF47637006997ED /* CoreBluetooth.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -421,6 +433,7 @@
 				DEVELOPMENT_TEAM = 8B773VBQ9B;
 				INFOPLIST_FILE = "mac-ble-swift/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.in-context.mac-ble-swift";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -437,6 +450,7 @@
 				DEVELOPMENT_TEAM = 8B773VBQ9B;
 				INFOPLIST_FILE = "mac-ble-swift/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.in-context.mac-ble-swift";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;

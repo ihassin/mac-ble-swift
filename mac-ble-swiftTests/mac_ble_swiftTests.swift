@@ -21,9 +21,12 @@ class mac_ble_swiftTests: XCTestCase {
         super.tearDown()
     }
     
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    func testCanary() {
+        XCTAssert(true)
+    }
+
+    func testHeadline() {
+        XCTAssertEqual(ViewController().makeHeadline(from: "Hi"), "Hi")
     }
     
     func testPerformanceExample() {

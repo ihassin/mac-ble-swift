@@ -23,5 +23,9 @@ class ViewController: NSViewController {
     }
 
 
+    func makeHeadline(from string: String) -> String
+    {
+        return string
+    }
 }
 
